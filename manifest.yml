@@ -1,0 +1,11 @@
+---
+applications:
+- name: mirror-refresher
+  memory: 1G
+  buildpacks:
+  - java_buildpack_offline
+  path: target/refresh-mirror-0.1.0.jar
+  env:
+    CF_APIHOST: CHANGE-ME
+    CF_USERNAME: CHANGE-ME
+    CF_PASSWORD: CHANGE-ME
